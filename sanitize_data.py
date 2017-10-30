@@ -33,4 +33,5 @@ sanitized_waveform_data = inlier_points + downsampled_class_0
 shuffle(sanitized_waveform_data)
 
 data_frame = pd.DataFrame(sanitized_waveform_data)
-data_frame.to_csv("sanitized_waveform.data", index = False, header = False)
+data_frame.columns = ["V1", "V2", "V3", "V4", "V5", "V6", "V7", "V8", "V9", "V10","V11", "V12","V13", "V14", "V15", "V16", "V17", "V18", "V19", "V20", "V21", "V22"]
+data_frame.to_csv("sanitized_waveform.data", index = False, header = True)
